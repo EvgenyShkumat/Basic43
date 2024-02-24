@@ -7,6 +7,7 @@ void random_init(int* array, int size, int start);
 int amount_of_even_elements(int* vector, int size);
 int sum_elements_below_avg(int* vector, int size, double avg);
 double find_avg_arithmetical(int* vector, int size);
+int product_even_postition_positive_elements(int* vector, int size);
 
 int main() {
 	srand(time(NULL));
@@ -19,8 +20,8 @@ int main() {
 
 	double avg = find_avg_arithmetical(vector, size);
 
-	cout << "\nThe sum of elements which are less than avg arithmetic by their absolute value is: "
-		<< sum_elements_below_avg(vector, size, avg);
+	cout << "\nThe product of positive elements on even positions is: "
+		<< product_even_postition_positive_elements(vector, size);
 
 	return 0;
 }

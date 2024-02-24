@@ -36,3 +36,16 @@ int sum_elements_below_avg(int* vector, int size, double avg) {
 
 	return sum;
 }
+
+int product_even_postition_positive_elements(int* vector, int size) {
+	int product = 1;
+
+	for (int i = 1; i < size; i += 2)
+	{
+		if (*(vector + i) > 0) {
+			product *= *(vector + i);
+		}
+	}
+
+	return product;
+}
